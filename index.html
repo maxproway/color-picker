@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        in
+        <link
+            href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Color Picker</title>
+    </head>
+    <body>
+        <app class="app">
+            <header class="header">
+                <input id="color-pick-input" class="color-pick-input" type="color" />
+                <select name="scheme-select" id="scheme-select" class="scheme-select">
+                    <option value="monochrome" selected>Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <a id="get-color-scheme-btn" href="#" class="get-color-scheme-btn" onclick="getColorScheme()"
+                    >Get color scheme</a
+                >
+            </header>
+            <main>
+                <div class="colors">
+                    <div id="color-0" class="color-0"></div>
+                    <div id="color-1" class="color-1"></div>
+                    <div id="color-2" class="color-2"></div>
+                    <div id="color-3" class="color-3"></div>
+                    <div id="color-4" class="color-4"></div>
+                </div>
+                <div class="hex-codes">
+                    <div id="hex-0" class="hex-0" onclick="copyHex(this)"></div>
+                    <div id="hex-1" class="hex-1" onclick="copyHex(this)"></div>
+                    <div id="hex-2" class="hex-2" onclick="copyHex(this)"></div>
+                    <div id="hex-3" class="hex-3" onclick="copyHex(this)"></div>
+                    <div id="hex-4" class="hex-4" onclick="copyHex(this)"></div>
+                </div>
+            </main>
+        </app>
+        <script src="./script.js"></script>
+    </body>
+</html>
